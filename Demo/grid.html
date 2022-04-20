@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .grid-header {
+        background: LightSkyBlue;
+        grid-area: header;
+      }
+
+      .grid-advert {
+        background: LightSalmon;
+        grid-area: advert;
+      }
+
+      .grid-content {
+        background: PaleTurquoise;
+        grid-area: content;
+      }
+
+      .grid-footer {
+        background: lightpink;
+        grid-area: footer;
+      }
+
+      body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .grid-container {
+        min-height: 400px;
+        width: 100%;
+        background-color: gray;
+        display: grid;
+        grid-template: 80px auto 80px / 1fr 1fr;
+        grid-template-areas:
+          'header header'
+          'advert content'
+          'footer footer';
+        grid-gap: 20px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .grid-container {
+          grid-template-areas:
+            'advert header'
+            'advert content'
+            'advert footer';
+        }
+      }
+
+      @media only screen and (max-width: 300px) {
+        .grid-container {
+          grid-template: 20px 20px auto 20px / 1fr;
+          grid-template-areas:
+            'header'
+            'advert'
+            'content'
+            'footer';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid-container">
+      <header class="grid-header">header</header>
+      <aside class="grid-advert">advert</aside>
+      <article class="grid-content">content</article>
+      <footer class="grid-footer">footer</footer>
+    </section>
+  </body>
+</html>

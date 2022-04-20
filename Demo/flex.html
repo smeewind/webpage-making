@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>三列布局</title>
+    <style>
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .outer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      header,
+      footer {
+        height: 80px;
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      main {
+        min-height: calc(100vh - 160px);
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+      }
+      footer {
+        background-color: orangered;
+      }
+      .inner-left,
+      .inner-right {
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: palegreen;
+      }
+      .inner-right {
+        background-color: pink;
+      }
+      .content {
+        flex-grow: 1;
+        background-color: powderblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <header>header</header>
+      <main>
+        <div class="inner-left">left</div>
+        <div class="content">main</div>
+        <div class="inner-right">right</div>
+      </main>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

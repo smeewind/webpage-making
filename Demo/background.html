@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+  </head>
+  <style>
+    .img-container {
+      width: 40px;
+      height: 40px;
+      background-image: linear-gradient(
+          45deg,
+          #eee 25%,
+          transparent 25%,
+          transparent 75%,
+          #eee 75%
+        ),
+        linear-gradient(#eee 25%, transparent 25%, transparent 75%, #eee 75%);
+      background-position: 0 0, 20px 20px;
+      background-size: 40px 40px;
+    }
+    .img-back {
+      margin-top: 300px;
+      width: 300px;
+      height: 300px;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC);
+    }
+  </style>
+  <body>
+    <div class="img-container"></div>
+    <div class="img-back"></div>
+  </body>
+</html>

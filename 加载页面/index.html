@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加载页面</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #4D4D4D;
+      width: 12rem;
+      height: 12rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    svg path {
+      animation: load 600ms ease infinite;
+    }
+
+    svg path:nth-child(1) {
+      animation-delay: 50ms;
+    }
+
+    svg path:nth-child(2) {
+      animation-delay: 100ms;
+    }
+
+    svg path:nth-child(3) {
+      animation-delay: 150ms;
+    }
+
+    svg path:nth-child(4) {
+      animation-delay: 200ms;
+    }
+
+    svg path:nth-child(5) {
+      animation-delay: 250ms;
+    }
+
+    svg path:nth-child(6) {
+      animation-delay: 300ms;
+    }
+
+    svg path:nth-child(7) {
+      animation-delay: 350ms;
+    }
+
+    svg path:nth-child(8) {
+      animation-delay: 400ms;
+    }
+
+    svg path:nth-child(9) {
+      animation-delay: 450ms;
+    }
+
+    svg path:nth-child(10) {
+      animation-delay: 500ms;
+    }
+
+    svg path:nth-child(11) {
+      animation-delay: 550ms;
+    }
+
+    svg path:nth-child(12) {
+      animation-delay: 600ms;
+    }
+
+    @keyframes load {
+      0% {
+        fill: rgb(255, 255, 255)
+      }
+
+      100% {
+        fill: rgba(255, 255, 255, 0.2)
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="loading">
+    <svg t="1639125555191" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      p-id="7954" data-spm-anchor-id="a313x.7781069.0.i26" width="64" height="64">
+      <path
+        d="M352 512c0-17.6-14.4-32-32-32L160 480c-17.6 0-32 14.4-32 32s14.4 32 32 32l160 0C337.6 544 352 529.6 352 512z"
+        p-id="7956" data-spm-anchor-id="a313x.7781069.0.i14" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M191.2 363.8l138.6 80c15.4 8.8 34.8 3.6 43.8-11.8s3.6-34.8-11.8-43.8l-138.6-80c-15.4-8.8-34.8-3.6-43.8 11.8C170.6 335.4 175.8 354.8 191.2 363.8z"
+        p-id="7966" data-spm-anchor-id="a313x.7781069.0.i15" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M363.8 191.2c-8.8-15.4-28.4-20.6-43.8-11.8-15.4 8.8-20.6 28.4-11.8 43.8l80 138.6c8.8 15.4 28.4 20.6 43.8 11.8s20.6-28.4 11.8-43.8L363.8 191.2z"
+        p-id="7962" data-spm-anchor-id="a313x.7781069.0.i13" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M512 128c-17.6 0-32 14.4-32 32l0 160c0 17.6 14.4 32 32 32s32-14.4 32-32L544 160C544 142.4 529.6 128 512 128z"
+        p-id="7958" data-spm-anchor-id="a313x.7781069.0.i9" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M592 373.4c15.4 8.8 34.8 3.6 43.8-11.8l80-138.6c8.8-15.4 3.6-34.8-11.8-43.8-15.4-8.8-34.8-3.6-43.8 11.8l-80 138.6C571.4 345 576.6 364.6 592 373.4z"
+        p-id="7963" data-spm-anchor-id="a313x.7781069.0.i34" class="selected" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M650.6 432c8.8 15.4 28.4 20.6 43.8 11.8l138.6-80c15.4-8.8 20.6-28.4 11.8-43.8s-28.4-20.6-43.8-11.8l-138.6 80C647 397.2 641.8 416.6 650.6 432z"
+        p-id="7959" data-spm-anchor-id="a313x.7781069.0.i35" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path d="M864 480l-160 0c-17.6 0-32 14.4-32 32s14.4 32 32 32l160 0c17.6 0 32-14.4 32-32S881.6 480 864 480z"
+        p-id="7955" data-spm-anchor-id="a313x.7781069.0.i32" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M832.8 660.2l-138.6-80c-15.4-8.8-34.8-3.6-43.8 11.8-8.8 15.4-3.6 34.8 11.8 43.8l138.6 80c15.4 8.8 34.8 3.6 43.8-11.8C853.4 688.6 848.2 669.2 832.8 660.2z"
+        p-id="7965" data-spm-anchor-id="a313x.7781069.0.i30" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M635.8 662.2c-8.8-15.4-28.4-20.6-43.8-11.8s-20.6 28.4-11.8 43.8l80 138.6c8.8 15.4 28.4 20.6 43.8 11.8 15.4-8.8 20.6-28.4 11.8-43.8L635.8 662.2z"
+        p-id="7961" data-spm-anchor-id="a313x.7781069.0.i16" class="selected" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M512 672c-17.6 0-32 14.4-32 32l0 160c0 17.6 14.4 32 32 32s32-14.4 32-32l0-160C544 686.4 529.6 672 512 672z"
+        p-id="7957" data-spm-anchor-id="a313x.7781069.0.i17" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M432 650.6c-15.4-8.8-34.8-3.6-43.8 11.8l-80 138.6c-8.8 15.4-3.6 34.8 11.8 43.8 15.4 8.8 34.8 3.6 43.8-11.8l80-138.6C452.6 679 447.4 659.4 432 650.6z"
+        p-id="7964" data-spm-anchor-id="a313x.7781069.0.i25" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+      <path
+        d="M373.4 592c-8.8-15.4-28.4-20.6-43.8-11.8l-138.6 80c-15.4 8.8-20.6 28.4-11.8 43.8s28.4 20.6 43.8 11.8l138.6-80C377 626.8 382.2 607.4 373.4 592z"
+        p-id="7960" data-spm-anchor-id="a313x.7781069.0.i23" class="" fill="rgba(255, 255, 255, 0.2)"></path>
+    </svg>
+    <div>正在加载</div>
+  </div>
+</body>
+
+</html>

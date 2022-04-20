@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1px线</title>
+    <style>
+      .hairline {
+        margin-top: 100px;
+        height: 1px;
+        background-color: black;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+        .hairline {
+          transform: scaleY(0.666);
+        }
+      }
+      @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        .hairline {
+          transform: scaleY(0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hairline"></div>
+  </body>
+</html>
